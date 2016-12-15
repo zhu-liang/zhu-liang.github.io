@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-15T16:19:20.000Z</updated>
+  <updated>2016-12-15T14:53:46.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,27 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>plot.ly做数据可视化处理</title>
-    <link href="http://yoursite.com/2016/12/16/plot-ly%E5%81%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%84%E7%90%86/"/>
-    <id>http://yoursite.com/2016/12/16/plot-ly做数据可视化处理/</id>
-    <published>2016-12-15T16:17:41.000Z</published>
-    <updated>2016-12-15T16:19:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>看起来还直接提供了Python的接口， 以后用Python处理的数据可以直接做出可视化效果出来了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'morning! world!'</span>)</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;看起来还直接提供了Python的接口， 以后用Python处理的数据可以直接做出可视化效果出来了。&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;lin
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
