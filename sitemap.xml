@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/12/18/Docker%E4%BD%BF%E7%94%A8%E4%B9%8BHost%E6%9C%AC%E5%9C%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84Wordpress%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2016-12-18T15:04:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/12/18/VirtualBox-Mac%E5%AE%89%E8%A3%85%E4%B8%80%E7%9B%B4%E5%8D%A1%E6%AD%BB%E5%9C%A8%E9%AA%8C%E8%AF%81pkg%E5%A4%84/</loc>
     
     <lastmod>2016-12-18T14:17:45.000Z</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/12/14/%E5%AE%89%E8%BA%AB-%E7%AB%8B%E5%91%BD-%E6%80%A1%E6%83%85/</loc>
+    <loc>http://yoursite.com/2016/12/15/hello-world/</loc>
     
     <lastmod>2016-12-15T14:53:46.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/12/15/hello-world/</loc>
+    <loc>http://yoursite.com/2016/12/14/%E5%AE%89%E8%BA%AB-%E7%AB%8B%E5%91%BD-%E6%80%A1%E6%83%85/</loc>
     
     <lastmod>2016-12-15T14:53:46.000Z</lastmod>
     
