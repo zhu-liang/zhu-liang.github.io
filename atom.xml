@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-15T14:53:46.000Z</updated>
+  <updated>2016-12-18T14:17:45.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VirtualBox Mac安装一直卡死在验证pkg处</title>
+    <link href="http://yoursite.com/2016/12/18/VirtualBox-Mac%E5%AE%89%E8%A3%85%E4%B8%80%E7%9B%B4%E5%8D%A1%E6%AD%BB%E5%9C%A8%E9%AA%8C%E8%AF%81pkg%E5%A4%84/"/>
+    <id>http://yoursite.com/2016/12/18/VirtualBox-Mac安装一直卡死在验证pkg处/</id>
+    <published>2016-12-18T14:17:21.000Z</published>
+    <updated>2016-12-18T14:17:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="主要现象就是在解压安装包后不能通过验证，一直卡死"><a href="#主要现象就是在解压安装包后不能通过验证，一直卡死" class="headerlink" title="主要现象就是在解压安装包后不能通过验证，一直卡死"></a>主要现象就是在解压安装包后不能通过验证，一直卡死</h1><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>VirtualBox pkg 解压后在<strong><em>/Volumes/VitualBox/</em></strong><br>进入该文件夹<br>使用命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /</div></pre></td></tr></table></figure></p>
+<h2 id="安装成功"><a href="#安装成功" class="headerlink" title="安装成功"></a>安装成功</h2><p>可以看见<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">MyMac:VirtualBox zl$ sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /</div><div class="line">installer: Package name is Oracle VM VirtualBox</div><div class="line">installer: Installing at base path /</div><div class="line">installer: The install was successful.</div><div class="line">MyMac:VirtualBox zl$</div></pre></td></tr></table></figure></p>
+<p>DashBoard中已经有了其图标</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;主要现象就是在解压安装包后不能通过验证，一直卡死&quot;&gt;&lt;a href=&quot;#主要现象就是在解压安装包后不能通过验证，一直卡死&quot; class=&quot;headerlink&quot; title=&quot;主要现象就是在解压安装包后不能通过验证，一直卡死&quot;&gt;&lt;/a&gt;主要现象就是在解压安装包后不
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
