@@ -141,6 +141,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Docker-Gerrit做code-review" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/29/Docker-Gerrit做code-review/">Docker Gerrit做code review</a>
+    </h1>
+  
+
+        <a href="/2016/12/29/Docker-Gerrit做code-review/" class="archive-article-date">
+  	<time datetime="2016-12-29T13:30:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-29</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#使用Docker搭建Gerrit For Code Review</p>
+<p>本文目的：</p>
+<blockquote>
+<ul>
+<li>熟悉Docker使用，更加熟悉Markdown语法</li>
+<li>学习如何使用Docker File生成Image，之前都是直接Pull</li>
+<li>Gerrit搭建好之后，熟悉Gerrit使用</li>
+</ul>
+</blockquote>
+<p>##运行环境<br>OS X<br>Docker Version 1.12.3</p>
+<p>##安装并访问Gerrit</p>
+<p>Gerrit的Docker File地址：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/openfrontier/docker-gerrit</div></pre></td></tr></table></figure></p>
+<p>在本地文件夹运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker build -t openfrontier/gerrit .</div></pre></td></tr></table></figure></p>
+<p>当看见<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Step 33 : CMD /gerrit-start.sh</div><div class="line"> ---&gt; Running <span class="keyword">in</span> e1056099c95b</div><div class="line"> ---&gt; 7cdd5a0b7f22</div><div class="line">Removing intermediate container e1056099c95b</div><div class="line">Successfully built 7cdd5a0b7f22</div></pre></td></tr></table></figure></p>
+<p>时则build完成<br>使用命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run <span class="_">-d</span> -p 8080:8080 -p 29418:29418 openfrontier/gerrit</div></pre></td></tr></table></figure></p>
+<p>现在看起来已经运行起来了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">PowerEngine:docker-gerrit zl$ docker images</div><div class="line">REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE</div><div class="line">openfrontier/gerrit   latest              7cdd5a0b7f22        8 minutes ago       233.7 MB</div><div class="line">openjdk               8-jre-alpine        d85b17c6762e        43 hours ago        107.9 MB</div><div class="line">wordpress             latest              d1d84847b56e        2 weeks ago         400.2 MB</div><div class="line">mysql                 latest              594dc21de8de        2 weeks ago         400.2 MB</div><div class="line">PowerEngine:docker-gerrit zl$ docker ps</div><div class="line">CONTAINER ID        IMAGE                 COMMAND                  CREATED              STATUS              PORTS                                              NAMES</div><div class="line">8a75e80385e9        openfrontier/gerrit   <span class="string">"/gerrit-entrypoint.s"</span>   About a minute ago   Up About a minute   0.0.0.0:8080-&gt;8080/tcp, 0.0.0.0:29418-&gt;29418/tcp   peaceful_wright</div><div class="line">PowerEngine:docker-gerrit zl$</div></pre></td></tr></table></figure></p>
+<p>访问本地8080端口已经可以访问了。</p>
+<p>未完待续…</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/29/Docker-Gerrit做code-review/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-ActiveMQ之初使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -672,6 +743,14 @@ undefined
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">Mac</a>
               </li>
              
@@ -681,10 +760,6 @@ undefined
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">收音机</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">Java</a>
               </li>
             
             <div class="clearfix"></div>
