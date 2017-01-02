@@ -82,7 +82,7 @@
     <link href="http://yoursite.com/2016/12/18/Docker%E4%BD%BF%E7%94%A8%E4%B9%8BHost%E6%9C%AC%E5%9C%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84Wordpress%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://yoursite.com/2016/12/18/Docker使用之Host本地一个简单的Wordpress服务器/</id>
     <published>2016-12-18T14:45:07.000Z</published>
-    <updated>2016-12-18T15:13:31.000Z</updated>
+    <updated>2017-01-02T15:00:25.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>首先我们需要陈列所需要的components</p>
@@ -92,6 +92,14 @@
 <li>WordPress Instance</li>
 </ul>
 </blockquote>
+<p>如果使用docker build镜像时出现如下错误<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Can<span class="string">'t connect to docker daemon. Is '</span>docker <span class="_">-d</span><span class="string">' running on this host?</span></div></pre></td></tr></table></figure></p>
+<p><strong> In Linux: </strong></p>
+<p>From Create a Docker group section it is neccesary add user to docker group:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo usermod <span class="_">-a</span>G docker $(whoami)</div></pre></td></tr></table></figure></p>
+<p>Log out and log back in. This ensures your user is running with the correct permissions.</p>
+<p><strong> In Mac OSX: </strong></p>
+<p>As Dayel Ostraco says is necessary to add environments variables:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ docker-machine start <span class="comment"># start virtual machine for docker</span></div><div class="line">$ docker-machine env  <span class="comment"># it's helps to get environment variables</span></div><div class="line">$ <span class="built_in">eval</span> <span class="string">"<span class="variable">$(docker-machine env default)</span>"</span> <span class="comment">#set environment variables</span></div></pre></td></tr></table></figure>
+<p>The docker-machine start outputs the comments to guide the process.</p>
 <p>所以我们需要先 pull 这两个components各自的image<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull mysql</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull wordpress</div></pre></td></tr></table></figure>
 <p>可以看到结果<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">PowerEngine:~ zl$ docker images</div><div class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</div><div class="line">wordpress           latest              d1d84847b56e        3 days ago          400.2 MB</div><div class="line">mysql               latest              594dc21de8de        4 days ago          400.2 MB</div></pre></td></tr></table></figure></p>
@@ -111,7 +119,7 @@
 &lt;li&gt;WordPress Instance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;所以我们需要先 pull 这两个c
+&lt;p&gt;如果使用docker build镜
     
     </summary>
     

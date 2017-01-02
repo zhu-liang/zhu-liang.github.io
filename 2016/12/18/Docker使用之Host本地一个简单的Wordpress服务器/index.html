@@ -15,9 +15,9 @@ MySQL 数据库
 WordPress Instance
 
 
-所以我们需要先 pull 这两个components各自的image1docker pull mysql
-1docker pull wordpress
-可以看到结果1234PowerEngine:~ zl$ docker imagesREPOSITORY          TAG">
+如果使用docker build镜像时出现如下错误1Can&apos;t connect to docker daemon. Is &apos;docker -d&apos; running on this host?
+ In Linux: 
+From Create a Docker group section i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker使用之Host本地一个简单的Wordpress服务器">
 <meta property="og:url" content="http://yoursite.com/2016/12/18/Docker使用之Host本地一个简单的Wordpress服务器/index.html">
@@ -29,10 +29,10 @@ MySQL 数据库
 WordPress Instance
 
 
-所以我们需要先 pull 这两个components各自的image1docker pull mysql
-1docker pull wordpress
-可以看到结果1234PowerEngine:~ zl$ docker imagesREPOSITORY          TAG">
-<meta property="og:updated_time" content="2016-12-18T15:13:31.000Z">
+如果使用docker build镜像时出现如下错误1Can&apos;t connect to docker daemon. Is &apos;docker -d&apos; running on this host?
+ In Linux: 
+From Create a Docker group section i">
+<meta property="og:updated_time" content="2017-01-02T15:00:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker使用之Host本地一个简单的Wordpress服务器">
 <meta name="twitter:description" content="首先我们需要陈列所需要的components
@@ -42,9 +42,9 @@ MySQL 数据库
 WordPress Instance
 
 
-所以我们需要先 pull 这两个components各自的image1docker pull mysql
-1docker pull wordpress
-可以看到结果1234PowerEngine:~ zl$ docker imagesREPOSITORY          TAG">
+如果使用docker build镜像时出现如下错误1Can&apos;t connect to docker daemon. Is &apos;docker -d&apos; running on this host?
+ In Linux: 
+From Create a Docker group section i">
   
     <link rel="alternative" href="/atom.xml" title="Vitaminised Drink" type="application/atom+xml">
   
@@ -196,6 +196,14 @@ WordPress Instance
 <li>WordPress Instance</li>
 </ul>
 </blockquote>
+<p>如果使用docker build镜像时出现如下错误<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Can<span class="string">'t connect to docker daemon. Is '</span>docker <span class="_">-d</span><span class="string">' running on this host?</span></div></pre></td></tr></table></figure></p>
+<p><strong> In Linux: </strong></p>
+<p>From Create a Docker group section it is neccesary add user to docker group:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo usermod <span class="_">-a</span>G docker $(whoami)</div></pre></td></tr></table></figure></p>
+<p>Log out and log back in. This ensures your user is running with the correct permissions.</p>
+<p><strong> In Mac OSX: </strong></p>
+<p>As Dayel Ostraco says is necessary to add environments variables:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ docker-machine start <span class="comment"># start virtual machine for docker</span></div><div class="line">$ docker-machine env  <span class="comment"># it's helps to get environment variables</span></div><div class="line">$ <span class="built_in">eval</span> <span class="string">"<span class="variable">$(docker-machine env default)</span>"</span> <span class="comment">#set environment variables</span></div></pre></td></tr></table></figure>
+<p>The docker-machine start outputs the comments to guide the process.</p>
 <p>所以我们需要先 pull 这两个components各自的image<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull mysql</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull wordpress</div></pre></td></tr></table></figure>
 <p>可以看到结果<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">PowerEngine:~ zl$ docker images</div><div class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</div><div class="line">wordpress           latest              d1d84847b56e        3 days ago          400.2 MB</div><div class="line">mysql               latest              594dc21de8de        4 days ago          400.2 MB</div></pre></td></tr></table></figure></p>
@@ -333,7 +341,7 @@ WordPress Instance
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 祝亮
+    		&copy; 2017 祝亮
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
