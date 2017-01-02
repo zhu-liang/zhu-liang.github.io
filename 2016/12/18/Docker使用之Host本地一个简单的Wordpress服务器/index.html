@@ -32,7 +32,7 @@ WordPress Instance
 如果使用docker build镜像时出现如下错误1Can&apos;t connect to docker daemon. Is &apos;docker -d&apos; running on this host?
  In Linux: 
 From Create a Docker group section i">
-<meta property="og:updated_time" content="2017-01-02T15:00:25.000Z">
+<meta property="og:updated_time" content="2017-01-02T16:32:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker使用之Host本地一个简单的Wordpress服务器">
 <meta name="twitter:description" content="首先我们需要陈列所需要的components
@@ -211,6 +211,7 @@ From Create a Docker group section i">
 <p>运行wordpress 镜像，同样使用-e传入相应参数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PowerEngine:~ zl$ docker run <span class="_">-e</span> WORDPRESS_DB_USER=zhuliang <span class="_">-e</span> WORDPRESS_DB_PASSWORD=54321 <span class="_">-e</span> WORDPRESS_DB_NAME=newname_db -p 8088:80 -v /Users/zl/develop/tool/docker/wordpress/html:/var/www/html --link wordpress_db:mysql --name word_press_instance <span class="_">-d</span> wordpress</div><div class="line">22c05b98f19d0459466c9f2f29b96322d5938d2e1cdeb972d2026fafea874643</div><div class="line">PowerEngine:~ zl$</div></pre></td></tr></table></figure></p>
 <p>根据我们上一条中expose出来的端口号8088，访问<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">localhost:8088</div></pre></td></tr></table></figure></p>
 <p>则可以进入到熟悉的wordpress配置页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Welcome</div><div class="line"></div><div class="line">Welcome to the famous five-minute WordPress installation process! Just fill <span class="keyword">in</span> the information below and you’ll be on your way to using the most extendable and powerful personal publishing platform <span class="keyword">in</span> the world.</div><div class="line"></div><div class="line">Information needed</div><div class="line"></div><div class="line">Please provide the following information. Don’t worry, you can always change these settings later.</div></pre></td></tr></table></figure></p>
+<p>如果需要进入到container instance里面去看file system的话<br>使用如下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker exec -i -t instance名字 /bin/bash</div></pre></td></tr></table></figure></p>
 
       
 
