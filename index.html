@@ -141,6 +141,60 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-set-up-ssh-reverse-tunneling-for-remote-debug" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/05/set-up-ssh-reverse-tunneling-for-remote-debug/">set up ssh reverse tunneling for remote debug</a>
+    </h1>
+  
+
+        <a href="/2017/01/05/set-up-ssh-reverse-tunneling-for-remote-debug/" class="archive-article-date">
+  	<time datetime="2017-01-04T16:02:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-05</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这是一篇笔记型的记录"><a href="#这是一篇笔记型的记录" class="headerlink" title="这是一篇笔记型的记录"></a>这是一篇笔记型的记录</h1><h2 id="从A-去公网机器B"><a href="#从A-去公网机器B" class="headerlink" title="从A 去公网机器B"></a>从A 去公网机器B</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -N -R 2222:B的IP:22</div></pre></td></tr></table></figure>
+<p>而且在A机的 ~/.ssh/config（如果没有这个文件，直接新建一个）<br>可以输入字段 KeepAlive （Something like that）<br>这样A和B之间SSH连接有心跳包保持，不过Session Timeout</p>
+<p>然后从机器C 连接去机器B，但是用户名是A的用户名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh B的IP -p 2222</div></pre></td></tr></table></figure></p>
+<p>如果要拷贝文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scp -P 2222  ./hellotest A用户名:B的Ip Address</div></pre></td></tr></table></figure></p>
+<p><strong> 注意这里的P是大些 </strong></p>
+<p><strong> 😄， 好记性不如烂笔头啊 </strong> </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/05/set-up-ssh-reverse-tunneling-for-remote-debug/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-Docker-Gerrit做code-review" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -750,6 +804,10 @@ undefined
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)">Docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">docker</a>
               </li>
              
@@ -759,10 +817,6 @@ undefined
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">Mac</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">Docker</a>
               </li>
              
               <li class="article-tag-list-item">

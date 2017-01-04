@@ -6,14 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Mac | Vitaminised Drink</title>
+  <title>set up ssh reverse tunneling for remote debug | Vitaminised Drink</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Vitaminised Drink">
-<meta property="og:url" content="http://yoursite.com/tags/Mac/index.html">
+  <meta name="description" content="这是一篇笔记型的记录从A 去公网机器B1ssh -N -R 2222:B的IP:22
+而且在A机的 ~/.ssh/config（如果没有这个文件，直接新建一个）可以输入字段 KeepAlive （Something like that）这样A和B之间SSH连接有心跳包保持，不过Session Timeout
+然后从机器C 连接去机器B，但是用户名是A的用户名1ssh B的IP -p 2222
+如果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="set up ssh reverse tunneling for remote debug">
+<meta property="og:url" content="http://yoursite.com/2017/01/05/set-up-ssh-reverse-tunneling-for-remote-debug/index.html">
 <meta property="og:site_name" content="Vitaminised Drink">
+<meta property="og:description" content="这是一篇笔记型的记录从A 去公网机器B1ssh -N -R 2222:B的IP:22
+而且在A机的 ~/.ssh/config（如果没有这个文件，直接新建一个）可以输入字段 KeepAlive （Something like that）这样A和B之间SSH连接有心跳包保持，不过Session Timeout
+然后从机器C 连接去机器B，但是用户名是A的用户名1ssh B的IP -p 2222
+如果">
+<meta property="og:updated_time" content="2017-01-04T16:07:06.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vitaminised Drink">
+<meta name="twitter:title" content="set up ssh reverse tunneling for remote debug">
+<meta name="twitter:description" content="这是一篇笔记型的记录从A 去公网机器B1ssh -N -R 2222:B的IP:22
+而且在A机的 ~/.ssh/config（如果没有这个文件，直接新建一个）可以输入字段 KeepAlive （Something like that）这样A和B之间SSH连接有心跳包保持，不过Session Timeout
+然后从机器C 连接去机器B，但是用户名是A的用户名1ssh B的IP -p 2222
+如果">
   
     <link rel="alternative" href="/atom.xml" title="Vitaminised Drink" type="application/atom+xml">
   
@@ -139,54 +152,137 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-set-up-ssh-reverse-tunneling-for-remote-debug" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/18/VirtualBox-Mac安装一直卡死在验证pkg处/" class="archive-article-date">
-  	<time datetime="2016-12-18T14:17:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/18/VirtualBox-Mac安装一直卡死在验证pkg处/">VirtualBox Mac安装一直卡死在验证pkg处</a>
+    <h1 class="article-title" itemprop="name">
+      set up ssh reverse tunneling for remote debug
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
-	</div>
+        <a href="/2017/01/05/set-up-ssh-reverse-tunneling-for-remote-debug/" class="archive-article-date">
+  	<time datetime="2017-01-04T16:02:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-05</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这是一篇笔记型的记录"><a href="#这是一篇笔记型的记录" class="headerlink" title="这是一篇笔记型的记录"></a>这是一篇笔记型的记录</h1><h2 id="从A-去公网机器B"><a href="#从A-去公网机器B" class="headerlink" title="从A 去公网机器B"></a>从A 去公网机器B</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -N -R 2222:B的IP:22</div></pre></td></tr></table></figure>
+<p>而且在A机的 ~/.ssh/config（如果没有这个文件，直接新建一个）<br>可以输入字段 KeepAlive （Something like that）<br>这样A和B之间SSH连接有心跳包保持，不过Session Timeout</p>
+<p>然后从机器C 连接去机器B，但是用户名是A的用户名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh B的IP -p 2222</div></pre></td></tr></table></figure></p>
+<p>如果要拷贝文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scp -P 2222  ./hellotest A用户名:B的Ip Address</div></pre></td></tr></table></figure></p>
+<p><strong> 注意这里的P是大些 </strong></p>
+<p><strong> 😄， 好记性不如烂笔头啊 </strong> </p>
 
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/01/05/set-up-ssh-reverse-tunneling-for-remote-debug/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/29/Docker-Gerrit做code-review/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Docker Gerrit做code review</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
 
 
           </div>
@@ -209,9 +305,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
