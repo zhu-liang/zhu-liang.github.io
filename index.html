@@ -159,41 +159,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>$$<br>% !TEX encoding = IsoLatin9<br>\documentclass[11pt,a4paper]{moderncv}</p>
-<p>% moderncv themes<br>%\moderncvtheme[blue, roman]{casual}<br>% optional argument are ‘blue’ (default), ‘orange’, ‘red’, ‘green’, ‘grey’ and ‘roman’ (for roman fonts, instead of sans serif fonts)<br>\moderncvtheme[blue]{classic}                % idem</p>
-<p>\usepackage[utf8]{inputenc}</p>
-<p>% adjust the page margins<br>\usepackage[scale=0.8]{geometry}<br>\recomputelengths                             % required when changes are made to page layout lengths</p>
-<p>% personal data<br>\firstname{Zhu}<br>\familyname{Liang}<br>\title{Curriculum Vitae}<br>\mobile{+65 98833407}<br>\email{julian.liangzhu@gmail.com}<br>\quote{\mbox{Nationality: China \hspace{5mm} Birthday: 08/11/1988 \hspace{5mm}<br>%Expected Salary: S\$7500<br>}}</p>
-<p>%\phone{(312) 413-8265}                      % optional, remove the line if not wanted<br>%\fax{312 996 1491}                          % optional, remove the line if not wanted<br>\photo[64pt]{ID_Photo.jpg}                         % ‘64pt’ is the height the picture must be resized to and ‘picture’ is the name of the picture file;</p>
-<p>\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page</p>
-<p>%% \renewcommand<em>{\sectionfont}{\LARGE\sffamily\monospace\slshape}<br>%% \renewcommand</em>\addressfont{\fontfamily{pzc}\selectfont}<br>%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}</p>
-<p>\begin{document}<br>\maketitle</p>
-<p>\section{Education}<br>\cventry{2012–2013}{MS in Embedded Systems}{Computer Engineering School, Nanyang Technological University}{Singapore}{}{}<br>\cventry{2006–2010}{B.Eng in Network Engineering}{Computer Science School, Nanjing University of Science and Technology}{China}{}{}</p>
-<p>%\section{Master thesis}<br>%\cvline{title}{\emph{Title}}<br>%\cvline{supervisors}{Supervisors}<br>%\cvline{description}{\small Short thesis abstract}</p>
-<p>\section{Professional Experience}<br>\cventry{2016-present} {Embedded Software Engineer\newline Greenwave Systems, Inc. Singapore}<br>{}{}{}<br>{Designed and implement related modules in IOT core which is used to abstract low layer Z-Wave devices in local IOT network to provide interfaces to upper platform independent layer (Java Layer). JSON is used between Java layer and C++ layer. Focus on security design as well as IOT core state machine design.}</p>
-<p>\cventry{2013-2015}{Software Engineer \hspace{8mm}  \textrm{to} \hspace{8mm} Network Product Manager \newline Encryption-Technology, Pte, Ltd. Singapore}<br>{}{}{}<br>{Designed and implemented Linux kernel modules for network packets encryption.\Designed and developed firmware for a USB to Ethernet Adapter with encryption function in. \Improved Windows filter driver software to manually maintain a TCP connection state machine.}</p>
-<p>\cventry{2010-2012}{Software Development Engineer \newline Hikvision Digital Technological Co., Ltd. Hangzhou, China}<br>{}<br>{}<br>{}<br>{Designed and developed MFC(C++) application worked together with different servers via sock- ets to stream real time as well as recorded video.}</p>
-<p>\section{Qualifications}<br>\cventry{C/C++ Programming}{Design software architecture}{Implement Linux device drivers, Develop Windows applications, Implement Bootloader for new hardware design, Develop Windows filter driver}{}{}{}<br>\cventry{Detailed understanding of TCP/IP stack}{Plan network layout, Host webservice. Implemented Httpd Server in windows filter driver}{}{}{}{}</p>
-<p>\section{Project Experience}<br>%% \subsection{Research Projects}<br>\cventry{2016–present}<br>{Z-Wave S2 New Standard Integration In IOT Gateway }<br>{IOT Core Development}<br>{C++ Hierarchy State Machine}{Test Driven Development}<br>{Design and develop state machine to handle ECDH process during including new device process. Providing interfaces from C++ layer(Core) to Java layer(Module) for adaptation of the new security standard of Z-Wave network}</p>
-<p>\cventry{2016}<br>{System Security Design Of IOT Platform}<br>{PKI Design}<br>{Security Chip Evaluation}{Hack JVM Provided Functions}<br>{Give proposal of security design of IOT platform (device-IOT gateway-cloud-app). Conducted evaluation of NXP and Infineon TPM security chip. Completed POC of Java Crypto Service Provider.}</p>
-<p>\cventry{2015}<br>{Cryptor 700 Project}<br>{Linux Kernel Development}<br>{}{Network Subsystem in Linux}<br>{<br>Cryptor 700 is network hardware for encryption. Managed the project of supporting bridge mode encryption. Designed interface with FPGA, memory management, Linux network subsystem customization. Also managed a project of supporting encryption according VLAN tag.<br>}</p>
-<p>%%\vspace*{0.2\baselineskip}<br>%%\cventry{2015}<br>%%{Store Management System}<br>%%{Database}<br>%%{Java Programming}{}<br>%%{<br>%%Work includes software architecture design and implementation in “MVC” manner, database management, UI supported with Java Swing.<br>%%}</p>
-<p>\vspace*{0.2\baselineskip}<br>\cventry{2014–2015}<br>{LionToken Net}<br>{Embedded}<br>{Atmel3u4e MCU}{Ethernet Chip SPI Driver}<br>{LionToken Net is a USB dongle for encryption purpose.<br>Implemented firmware of this device. Work includes ring buffer memory<br>management, USB CDC class descriptor organization, USB endpoint interrupt service routine, RNDIS response to the query from host, Ethernet chip SPI driver implementation.<br>}</p>
-<p>%% \cventry{2011–present}<br>%% {AlgoTrading}<br>%% {Go, Java}<br>%% {}{}<br>%% {An analyzing tool for offline trading strategy emulating. Data are parsed from TongDaXin stock trading software, I emulated and evaluated several trading strategies based on this project.}</p>
-<p>%% \cventry{2008}{GPGPU Optimization}{C++, CTM IL}{}{}{Research on GPGPU program optimization and platform features}</p>
-<p>%% \subsection{Course Projects}<br>%% \cventry{2008}{Compiler for Tiger Language}{C, Flex, Bison}{}{}{Project for the course Compilers}</p>
-<p>%% \subsection{Other Projects}<br>%% \vspace*{0.2\baselineskip}<br>\cventry{2013–2014}<br>{Private Web}<br>{Windows Filter Driver}<br>{TCP State Machine}{}<br>{To realize switching to Encrypt mode when user try to access protected website.<br>Implemented a TCP state machine in Windows Filter driver and designing a mechanism to realize the auto switch feature.<br>}</p>
-<p>\vspace*{0.2\baselineskip}<br>\cventry{2012–2013}<br>{Indoor Localization}<br>{Android, Java Programming}<br>{Multithreading}<br>{Research Project}<br>{<br>Developed Android app to collect sensor data in multithreading way, which is used to build virtual map for indoor localization.<br>}</p>
-<p>%% \cventry{2010}<br>%% {Computer System Engineering Teaching Assistant}{}{}{}<br>%% {}</p>
-<p>\vspace*{0.2\baselineskip}<br>\cventry{2013}<br>{Calculator On ARM Development Kit}<br>{Linux Device Kernel Driver Development}<br>{Course Project}{}<br>{<br>Keyboard driver development on ARM CPU, and use LCD driver routine to display the outcome.<br>}</p>
-<p>%% \cventry{2009}<br>%% {Operating System Teaching Assistant}{}{}{}{}</p>
-<p>\vspace*{0.2\baselineskip}<br>\cventry{2010–2012}<br>{Safe City Project}<br>{C++, Windows Application, Socket Programming, Multi-thread Programming}<br>{}{}<br>{<br>MFC client developed to monitor whole city’s traffic. Socket programming is<br>used for the communication between servers and clients.<br>}</p>
-<p>% \cventry{2007}{Collaborative Multi-client Drawing System}{Java, RMI}{}{}{Project for Object-Oriented Programming course.}<br>%% \cventry{2008}{Succour Administration System for Changzheng Community}{Java, JSP}{}{}{A simple web-based succour management system}<br>%% \cventry{2007}{Train Ticket Booking System for Fudan University}{Java, JSP}{}{}{My first out-sourcing project}</p>
-<p>\section{Skills}<br>\cventry{Languages}{C++ = C &gt; Java = Python}{SQL, Scala}{}{}{}<br>\cventry{Embedded Systems}{Linux Kernel Development}{Android App}{Bootloader}{}{}<br>\cventry{Internet}{CCNA}{Website hosting}{Mail Server Setup}{ Docker}{}<br>%% \cventry{Application Dev}{Ruby on Rails, iOS development}{}{}{}{}<br>\cventry{English}{Fluent}{}{}{}{}<br>\cventry{Keywords}{C, C++ 11, IOT Platform, Security, PKI, STL, SQL, Java, Object Oriented Programming, Linux Kernel,<br>Embedded Programming, ARM, PowerPC, USB, SPI,<br>Multithreaded Programming, Apache Web Server}{}{}{}{}</p>
-<p>% \closesection{}                   % needed to renewcommands<br>% \renewcommand{\listitemsymbol}{-} % change the symbol for lists</p>
-<p>%\section{Extra 1}<br>%\cvlistitem{Item 1}<br>%\cvlistitem{Item 2}<br>%\cvlistitem[+]{Item 3}            % optional other symbol</p>
-<p>%\section{Extra 2}<br>%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}<br>%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}<br>%cvlistdoubleitem[\Neutral]{Item 3}{}</p>
-<p>\end{document}<br>$$</p>
+        <p>[Download URL] (<a href="https://github.com/zhu-liang/zhu-liang.github.io/files/693592/Zhu.Liang.pdf" target="_blank" rel="external">https://github.com/zhu-liang/zhu-liang.github.io/files/693592/Zhu.Liang.pdf</a>)<br>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/open?id=0BxKuSDWn9gbuRHJUcVJnZ2hLd28/preview" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+</p>
 
       
 
