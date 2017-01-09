@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-09T14:00:58.000Z</updated>
+  <updated>2017-01-09T14:13:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,24 +20,15 @@
     <link href="http://yoursite.com/2017/01/09/Resume/"/>
     <id>http://yoursite.com/2017/01/09/Resume/</id>
     <published>2017-01-09T13:52:22.000Z</published>
-    <updated>2017-01-09T14:00:58.000Z</updated>
+    <updated>2017-01-09T14:13:11.000Z</updated>
     
-    <content type="html"><![CDATA[
-
-	<div class="row">
-    <embed src="https://github.com/zhu-liang/zhu-liang.github.io/files/693592/Zhu.Liang.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
+    <content type="html"><![CDATA[<p>ahhhhhhh</p>
 ]]></content>
     
     <summary type="html">
     
-      
+      &lt;p&gt;ahhhhhhh&lt;/p&gt;
 
-	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;https://github.com/zhu-liang/zhu-liang.github.io/files/693592/Zhu.Liang.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; 
     
     </summary>
     
