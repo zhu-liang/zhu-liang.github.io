@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-09T14:16:41.000Z</updated>
+  <updated>2017-01-10T23:40:07.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IO之select模型</title>
+    <link href="http://yoursite.com/2017/01/11/IO%E4%B9%8Bselect%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://yoursite.com/2017/01/11/IO之select模型/</id>
+    <published>2017-01-10T23:35:51.000Z</published>
+    <updated>2017-01-10T23:40:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>IO分为阻塞，非阻塞（轮询），拉模式，推模式，还有就是select 模型。事实证明，在单CPU平台上，Linux下的select不一定比多线程表现差。</p>
+<p>PlantUML  select模型</p>
+<p>一般的socket编程， echo 程序如下：<br>客户端：<br>服务器：</p>
+<p>如果用UDS socket的话，使用了Socket File<br>客户端：<br>服务器：</p>
+<p>github代码：</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;IO分为阻塞，非阻塞（轮询），拉模式，推模式，还有就是select 模型。事实证明，在单CPU平台上，Linux下的select不一定比多线程表现差。&lt;/p&gt;
+&lt;p&gt;PlantUML  select模型&lt;/p&gt;
+&lt;p&gt;一般的socket编程， echo 程序如下：&lt;br&gt;客
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>LatexTest</title>
